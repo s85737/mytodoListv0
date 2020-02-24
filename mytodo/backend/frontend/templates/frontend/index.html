@@ -1,0 +1,27 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyToDo</title>
+    <link rel="stylesheet" href="{% static 'frontend/css/reset.css' %}">
+    <link rel="stylesheet" href="{% static 'frontend/css/main.css' %}">
+</head>
+<body>
+<div id="app"></div>
+
+<script>
+// list default
+function init() {
+    document.getElementById('listdefault').click();
+}
+</script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="{% static 'frontend/js/listinclude.js' %}"></script>
+<script src="{% static 'frontend/js/clock.js' %}"></script>
+<script src="{% static 'frontend/js/js.js' %}"></script>
+<script src="{% static 'frontend/main.js' %}"></script>
+</body>
+</html>

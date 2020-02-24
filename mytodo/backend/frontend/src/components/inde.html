@@ -1,0 +1,40 @@
+<div id="wrap">
+        <!--Header-->
+        <!--Banner-->
+
+        <!--Contents-->
+        <article class="list">
+            <div class="list-area">
+                <div class="todo-list-sort">
+                    <div class="sort-method">
+                        <a href="#" onclick="list('list/list-todo.html')" id="listdefault">마! 시작하자</a>
+                        <a href="#" onclick="list('list/list-end.html')">했당</a>
+                    </div>
+                </div>
+                <!----------------------리스트 들어가는 곳---------------------->
+                <div class="todo-list" id="listinclude">
+                </div>
+                <!------------------------------------------------------------>
+            </div>
+        </article>
+        <!--bottom nav-->
+        <div class="popup">
+            <div class="add-todo">
+                <div class="head">
+                    <h3>Name</h3>
+                    <a href="#" onclick="closePopUp()"><svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.5 1L1 11.5" stroke="#979797" stroke-width="2"/>
+                        <path d="M1 1L11.5 11.5" stroke="#979797" stroke-width="2"/>
+                    </svg>
+                    </a>
+                </div>
+                <form>
+                    <input type="text" placeholder="언제까지 할꺼야" id="inputToDate">
+                    <input type="text" placeholder="해야할거 꼭 하자" id="inputToDo">
+                    <button type="submit">확인</button>
+                </form>
+            </div>
+        </div>
+    </div></title>
+</head>
+<body>
